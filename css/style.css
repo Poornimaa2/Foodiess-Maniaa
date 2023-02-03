@@ -1,0 +1,256 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 12px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 35px;
+}
+
+#logo img {
+    height: 120px;
+    margin: 4px -25px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar {
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#navbar ul {
+    font-family: 'Abril Fatface', cursive;
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: -1px;
+    margin: -36px 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url("../img/background5.jpg") no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 570px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+#home p {
+    font-size: 15px;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    text-align: center;
+}
+
+/* Services Section */
+
+#services {
+    margin: 10px 20px;
+    display: flex;
+
+}
+
+#services .box {
+    height: 400px;
+    width: 400px;
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 5px 10px;
+    border-radius: 83px;
+    background-color: #c7bba8;
+
+}
+#services .box:hover{
+    transform: scale(1.1);
+}
+
+#services .box img {
+    height: 200px;
+    width: 250px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-style: italic;
+}
+
+/* Clients Section */
+#client-section{
+    height: 400px;
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/background4.jpg');
+    width: 100%;
+    height: 64%;
+    z-index: -1;
+    opacity: 0.66;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 40px;
+}
+#clients img{
+    height: 120px;
+}
+
+/* Contact Us */
+#Contact{
+    position: relative;
+    margin: -144px 0px;
+
+}
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.75;
+    background: url('../img/contact.jpg')no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 2px;
+    padding-bottom: 182px;
+}
+#contact-box input,textarea{
+    background-color:#ece2d3;
+    border: 2px solid black;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Abril Fatface', cursive;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+
+.h-secondary {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.6rem;
+    padding: 12px;
+    text-decoration: underline;
+
+}
+
+.btn {
+    font-family: 'Abril Fatface', cursive;
+    padding: 6px 20px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    font: 1.5rem;
+    margin: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.5);
+}
+
+.center {
+    text-align: center;
+}
+#contact-box .btn{
+    width: 200px;
+    background-color: rgb(180, 184, 71);
+    color: black;
+}
+#contact-box .btn:hover{
+    background-color: rgb(214, 168, 112);
+}
